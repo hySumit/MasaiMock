@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 700px;
+        }
+
+        /* .logo {
+            margin-left: 3.5%;
+        }
+
+        .logo>img {
+            width: 200px;
+
+        } */
+
+        header {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* flex-wrap: wrap; */
+        }
+
+        header>div {
+            height: 60px;
+            width: 150px;
+            color: white;
+            background: linear-gradient(135deg, #C150E7, #3878E5);
+            margin-left: -2.6%;
+        }
+
+        header>div>h1 {
+            display: flex;
+            margin-top: 11px;
+            /* padding-top: 10px; */
+            /* border: 2px solid red; */
+            justify-content: center;
+            font-size: 27px;
+        }
+
+        .nav_link {
+            list-style: none;
+            /* margin-right: 140px; */
+            margin-left: 80px;
+            /* margin-left:-25%; */
+        }
+
+        .nav_link li {
+            font-size: 1.1rem;
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        .nav_link li a {
+            text-decoration: none;
+            font-weight: 600;
+            color: rgb(56, 55, 55);
+        }
+
+        #home {
+            color: rgb(114, 140, 223);
+        }
+
+        /* .nav_link li a{
+            transition: all 0.3s ease 0s;
+        } */
+        .nav_link li a:hover {
+            color: rgb(104, 134, 223);
+        }
+
+        #middle {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .left,
+        .right {
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: space-evenly; */
+            width: 40.78%;
+            padding: 30px 20px 20px 30px;
+            margin: 10px;
+        }
+
+        /* .left {
+            flex-direction: column;
+        } */
+
+        /* .right {
+            justify-content: space-evenly;
+            align-items: flex-start;
+
+        } */
+
+        .left>p {
+            padding-top: 6%;
+            color: rgb(104, 134, 223);
+            font-weight: 600;
+            font-size: 87%
+        }
+
+        .para {
+            line-height: 1.5rem;
+        }
+
+        .two {
+            margin-top: 10px;
+        }
+
+        .left>h1 {
+            padding-top: 10px;
+            padding-bottom: 20px;
+            color: rgb(75, 75, 75);
+        }
+
+        .vid {
+            display: flex;
+        }
+
+        .vid>p {
+            display: flex;
+            align-items: center;
+            margin-left: 2%;
+            color: rgb(46, 46, 46);
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .vid>img {
+            margin-top: 3%;
+            width: 150px;
+        }
+
+        .box {
+
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            height: 247px;
+            width: 218px;
+            margin: 20px;
+
+        }
+
+        .box>img {
+            margin: 10px 0 0 15px;
+            border-radius: 30px;
+            width: 70px;
+        }
+
+        .box>h3 {
+            margin-top: 3px;
+            margin-left: 15px;
+            font-size: 15px;
+
+        }
+
+        .box>p {
+            line-height: 1.5rem;
+            padding: 10px 20px 0px 20px;
+        }
+
+        .row1,
+        .row2 {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid red; */
+            margin-top: -30px;
+            flex-wrap: wrap;
+            
+        }
+        
+    </style>
+
+
+    <title>Study Lab</title>
+</head>
+
+<body>
+    <!-- <<<<<<This is our header for log and navbar>>>>> -->
+    <header>
+        <div>
+            <h1>StudyLab</h1>
+        </div>
+        <nav>
+            <ul class="nav_link">
+                <li><a id="home" href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Instructor</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <<<<<The Parent div for the 2 content childs >>>>>>> -->
+    <div id="middle">
+
+        <!-- <<<< The Left (ie 1st) Child and its contents>>>>>>>>> -->
+        <div class="left">
+            <p>WLCOME TO STUDYLAB</p>
+            <h1>We Are StudyLab An Online <br> Learning Center
+            </h1>
+            <div class="para">
+                <p>One time, I was studying for a history exam and I came across a question about the Battle of
+                    Gettysburg. I didn't know the answer, so I decided to make up a story. I wrote about how the Union
+                    army was led by a giant chicken and the Confederate
+                <p class="two"> army was led by a talking pig. The chicken and
+                    the pig had a big battle, and in the end, the chicken won. I got an A on the test, but I'm not sure
+                    if it was because of my story or because the teacher was just amused by my creativity.</p>
+                </p>
+                <div class="vid">
+                    <img src="https://cdn.pixabay.com/photo/2023/01/07/16/34/video-conference-7703598_1280.png"
+                        alt="Onlie learning">
+                    <p>Learn anything form StudyLab,<br> Watch video</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <<<< The Left (ie 2nd) Child and its contents>>>>>>>>> -->
+        <div class="right">
+
+            <!-- i have created 2 children divs for Parent right so that i can fit all the four divs inside 2 boxes in each boxes i will put 2 child boxes -->
+
+            <div class="row1">
+
+                <div class="box"><img src="https://cdn-icons-png.flaticon.com/128/4924/4924508.png"
+                        alt="Quality Education png">
+                    <h3>Top Quality Content</h3>
+                    <p>A small river named Duden flows by thier place and supplies</p>
+                </div>
+
+
+                <div class="box"><img src="https://cdn-icons-png.flaticon.com/128/3407/3407038.png" alt="Quiz png">
+                    <h3>World Class & Quiz</h3>
+                    <p>A small river named Duden flows by thier place and supplies</p>
+                </div>
+
+            </div>
+            <div class="row2">
+
+                <div class="box"><img src="https://cdn-icons-png.flaticon.com/128/3048/3048709.png"
+                        alt="Top quality instructors png">
+                    <h3>Highly Skilled Instructor</h3>
+                    <p>A small river named Duden flows by thier place and supplies</p>
+                </div>
+
+
+                <div class="box"><img src="https://cdn-icons-png.flaticon.com/128/3798/3798784.png"
+                        alt="Certificate png">
+                    <h3>Get Certified</h3>
+                    <p>A small river named Duden flows by thier place and supplies</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
